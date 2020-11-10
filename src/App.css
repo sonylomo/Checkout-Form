@@ -1,7 +1,94 @@
-body
-{
-	background: url(./assets/adventure.jpg) no-repeat center center fixed;
-	background-size: cover;
-	font-family: sans-serif;
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900";
+
+body {
+  /*background: url(./assets/guitars.jpg) no-repeat center center fixed;
+	background-size: cover;*/
+  font-family: sans-serif;
 }
 
+.Row {
+  width: 50vw;
+}
+
+/* Image Preview  */
+.Preview {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  color: white;
+}
+
+.WorkspaceName {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.WorkspacePrice {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.WorkspacePrice .Price {
+  font-size: 26px;
+  font-weight: 200;
+}
+
+.WorkspacePrice .Duration {
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  bottom: 2px;
+  margin-left: 5px;
+}
+
+.WorkspacePeople {
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/*  Checkout  */
+.Checkout {
+  font-size: small;
+}
+
+.Order_Summary {
+  line-height: 2px;
+}
+.Payment {
+  line-height: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.Payment_Label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.Payment_Input {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.Payment_Btn {
+  width: 50%;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  padding: 20px;
+}
