@@ -22,12 +22,12 @@ function App() {
 
   return (
     <div className="App">
-      <Container>
-        <Row className="Row">
-          <Col>
+      <Container className="Container">
+        <Row className="Row shadow bg-white rounded">
+          <Col md={6} sm={12}>
             <ImagePreview price={initialState.price} people={initialState.people} />
           </Col>
-          <Col>
+          <Col lg={6} sm={12}>
             <Checkout InitialState={initialState.duration} />
           </Col>
         </Row>

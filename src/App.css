@@ -2,23 +2,38 @@
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900";
 
 body {
-  /*background: url(./assets/guitars.jpg) no-repeat center center fixed;
-	background-size: cover;*/
   font-family: sans-serif;
 }
 
+.Container {
+  display: flex;
+  height: 80vh;
+  max-width: 650px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  justify-content: center;
+}
+
 .Row {
-  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 55%;
 }
 
 /* Image Preview  */
 .Preview {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg)
+    fixed;
   background-size: cover;
   height: 100%;
   width: 100%;
+  padding-top: 120%;
   padding-left: 20px;
-  color: white;
+  color: black;
 }
 
 .WorkspaceName {
@@ -50,7 +65,7 @@ body {
 .WorkspacePeople {
   line-height: 1.6;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   margin-top: 20px;
 }
 
@@ -80,10 +95,9 @@ body {
 }
 
 .Payment_Btn {
-  width: 50%;
+  width: 70%;
   font-size: 13px;
   font-weight: 300;
-  padding: 10px 0;
   margin-bottom: 10px;
 }
 
@@ -91,4 +105,22 @@ h5 {
   font-family: "Playfair Display";
   font-size: 18px;
   padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Container {
+    width: 100%;
+  }
+
+  .Row {
+    max-width: 55%;
+    height: 110vh;
+    padding: 0;
+  }
+
+  .Preview {
+    padding-top: 25%;
+    background-size: cover;
+    width: 100%;
+      }
 }
