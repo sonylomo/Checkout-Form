@@ -7,7 +7,7 @@ body {
 
 .Container {
   display: flex;
-  height: 80vh;
+  height: 70vh;
   max-width: 650px;
   position: absolute;
   top: 0;
@@ -26,8 +26,7 @@ body {
 
 /* Image Preview  */
 .Preview {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg)
-    fixed;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/jj-2.jpg);
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -107,7 +106,7 @@ h5 {
   padding: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
   .Container {
     width: 100%;
   }
@@ -116,11 +115,34 @@ h5 {
     max-width: 55%;
     height: 110vh;
     padding: 0;
+    width: 100vw;
   }
 
   .Preview {
     padding-top: 25%;
     background-size: cover;
     width: 100%;
-      }
+  }
+
+  .WorkspaceName {
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Preview {
+   
+    height: 100%;
+    width: 220%;
+    padding-top: 100%;
+    padding-bottom: 100%;
+    padding-left: 20px;
+  }
+
+  .Container{
+    height: 110vh;
+  }
 }
